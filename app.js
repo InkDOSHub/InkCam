@@ -71,7 +71,7 @@
       if (f) fmtp[f[1]] = f[2];
     }
     for (i = first; i < end; i++) {
-      var m = /^a=rtpmap:(\d+) ([\w-]+)\//.exec(linhas[i]);
+      var m = /^a=rtpmap:(\d+) ([\w-]+)\//.exec(lines[i]);
       if (m && codec && m[2].toUpperCase() === codec) chosen.push(m[1]);
     }
     if (codec === "H264") {
